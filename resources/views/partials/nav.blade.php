@@ -10,5 +10,5 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="/penulis">Penulis</a>
-    </li
+    </li>
 </ul>
