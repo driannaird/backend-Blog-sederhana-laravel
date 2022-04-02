@@ -8,4 +8,7 @@
     <li class="nav-item">
       <a class="nav-link" href="/categories">Category</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/penulis">Penulis</a>
+    </li>
 </ul>

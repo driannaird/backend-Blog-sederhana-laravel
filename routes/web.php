@@ -41,8 +41,15 @@ Route::get('/categories/{category:slug}', function(Category $category){
     ]);
 });
 
+Route::get('/penulis', function(){
+    return view('penulis', [
+        'title' => 'Penulis',
+        'penulis' => User::all()
+    ]);
+});
+
 Route::get('/post/penulis/{user:name}', function(User $user){
-    return view('user', [
+    return view('ditulis', [
         'title' => $user->name,
         'posts' => $user->posts,
         'user' => $user->name
