@@ -13,6 +13,7 @@ class PostFactory extends Factory
      */
     public function definition()
     {
+        // Membuat post faker 'php artisan make:factory PostFactory' mt_rand(mulaidari1, sampai5)
         return [
             'title' => $this->faker->sentence(mt_rand(2,8)),
             'slug' => $this->faker->slug(),

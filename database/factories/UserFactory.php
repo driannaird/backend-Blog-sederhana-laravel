@@ -14,6 +14,7 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+        // Menambah userName faker
         return [
             'name' => $this->faker->name(),
             'username' => $this->faker->unique()->userName(),
