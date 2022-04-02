@@ -5,7 +5,7 @@
         @foreach ($penulis as $p)
             <ul>
                 <li>
-                    <h2><a href="/post/penulis/{{ $p->name }}">{{ $p->name }}</a></h2>
+                    <h2><a href="/post/penulis/{{ $p->username }}">{{ $p->name }}</a></h2>
                 </li>
             </ul>
         @endforeach
