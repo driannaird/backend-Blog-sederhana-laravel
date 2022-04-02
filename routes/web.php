@@ -36,7 +36,7 @@ Route::get('/categories', function(){
 Route::get('/categories/{category:slug}', function(Category $category){
     return view('posts', [
         'title' => "Post by Category: $category->name",
-        'posts' => $category->posts->load('category', 'author')
+        'posts' => $category->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
     ]);
 });
 
@@ -50,6 +50,6 @@ Route::get('/penulis', function(){
 Route::get('/post/penulis/{author:username}', function(User $author){
     return view('posts', [
         'title' => "Post By Author: $author->username",
-        'posts' => $author->posts->load('category', 'author')
+        'posts' => $author->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
     ]);
 });
