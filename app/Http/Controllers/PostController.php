@@ -9,6 +9,7 @@ class PostController extends Controller
 {
     public function index(){
         return view('posts', [
+            'active' => 'posts',
             'title' => 'Semua Posts',
             //'posts' => Post::all()
             'posts' => Post::latest()->get() //N+1 sembuh dengan with(['relasinya']) protected $with = ['category', 'author']; di controllernyaa

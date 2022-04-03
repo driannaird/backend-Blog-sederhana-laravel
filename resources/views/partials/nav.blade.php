@@ -1,14 +1,14 @@
 <ul class="nav nav-tabs container">
     <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="/">Home</a>
+      <a class="nav-link {{ ($active === "home") ? 'active' : ''  }}" aria-current="page" href="/">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/posts">Posts</a>
+      <a class="nav-link {{ ($active === "posts") ? 'active' : ''  }}" href="/posts">Posts</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/categories">Category</a>
+      <a class="nav-link {{ ($active === "category") ? 'active' : ''  }}" href="/categories">Category</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/penulis">Penulis</a>
+      <a class="nav-link {{ ($active === "penulis") ? 'active' : ''  }}" href="/penulis">Penulis</a>
     </li>
-  </ul>
+</ul>
