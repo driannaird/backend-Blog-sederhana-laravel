@@ -27,6 +27,7 @@
     <div class="container">
         <div class="row">
             @foreach ($posts->skip(1) as $post)
+            {{-- Memunculkan posts dan melewati no 1 dengan method skip --}}
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <img src="https://source.unsplash.com/500x400?{{ $post->category->name }}" class="card-img-top" alt="{{ $post->category->name }}">
