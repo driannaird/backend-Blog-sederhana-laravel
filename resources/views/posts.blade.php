@@ -13,7 +13,7 @@
             <small class="text-muted">  
             By: <a href="/post/penulis/{{ $posts[0]->author->username }}">{{ $posts[0]->author->name }}</a> in <a href="/categories/{{ $posts[0]->category->slug }}">{{ $posts[0]->category->name }}</a> {{ $posts[0]->created_at->diffForHumans() }} 
             </small> 
-            {{-- diffForHumans library carbon --}}
+            {{-- diffForHumans library carbonn --}}
           </p>  
           
           <p class="card-text">{{ $posts[0]->excerpt }}</p>
