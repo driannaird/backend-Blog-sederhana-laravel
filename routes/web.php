@@ -35,13 +35,13 @@ Route::get('/categories', function(){
     ]);
 });
 
-Route::get('/categories/{category:slug}', function(Category $category){
-    return view('posts', [
-        'active' => "category",
-        'title' => "Post by Category: $category->name",
-        'posts' => $category->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
-    ]);
-});
+// Route::get('/categories/{category:slug}', function(Category $category){
+//     return view('posts', [
+//         'active' => "category",
+//         'title' => "Post by Category: $category->name",
+//         'posts' => $category->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
+//     ]);
+// });
 
 Route::get('/penulis', function(){
     return view('penulis', [
@@ -51,10 +51,10 @@ Route::get('/penulis', function(){
     ]);
 });
 
-Route::get('/post/penulis/{author:username}', function(User $author){
-    return view('posts', [
-        'active' => "penulis",
-        'title' => "Post By Author: $author->username",
-        'posts' => $author->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
-    ]);
-});
+// Route::get('/post/penulis/{author:username}', function(User $author){
+//     return view('posts', [
+//         'active' => "penulis",
+//         'title' => "Post By Author: $author->username",
+//         'posts' => $author->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
+//     ]);
+// });
