@@ -10,7 +10,7 @@
                 <div class="card bg-dark text-white">
                     <img src="https://source.unsplash.com/500x400?{{ $p->name }}" class="card-img" alt="{{ $p->name }}">
                     <div class="card-img-overlay">
-                      <h5 class="card-title"><a href="/post/penulis/{{ $p->username }}">{{ $p->name }}</a></h5>
+                      <h5 class="card-title"><a href="/posts?author={{ $p->username }}">{{ $p->name }}</a></h5>
                     </div>
                   </div>
             </div>

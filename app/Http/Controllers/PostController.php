@@ -23,7 +23,7 @@ class PostController extends Controller
             'active' => 'posts',
             'title' => 'Semua Posts' . $title,
             //'posts' => Post::all()
-            'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->get() //N+1 sembuh dengan with(['relasinya']) protected $with = ['category', 'author']; di controllernyaa
+            'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(7)->withQueryString() //N+1 sembuh dengan with(['relasinya']) protected $with = ['category', 'author']; di controllernyaa
         ]);
     }
 
