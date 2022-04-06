@@ -11,4 +11,7 @@
     <li class="nav-item">
       <a class="nav-link {{ ($active === "penulis") ? 'active' : ''  }}" href="/penulis">Penulis</a>
     </li>
+    <li class="nav-item ms-auto">
+      <a href="/login" class="nav-link"><i class="bi bi-arrow-right-square"></i> Login</a>
+    </li>
 </ul>
