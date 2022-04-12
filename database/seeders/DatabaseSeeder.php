@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Web Programing',
             'slug' => 'web-programing'
         ]);
-
+        
         Category::create([
             'name' => 'Anime Baru',
             'slug' => 'anime-baru'
