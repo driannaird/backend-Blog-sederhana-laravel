@@ -2,14 +2,14 @@
 
 @section('container')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Create new posts</h1>
+    <h1 class="h2">Buat postingan baru</h1>
     </div>
 
     <div class="col-lg-8">
         <form action="/dashboard/posts" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
+                <label for="title" class="form-label">Judul</label>
                 <input type="text" class="form-control @error('title')
                     is-invalid
                 @enderror" id="title" name="title" autofocus required value="{{ old('title') }}">
@@ -20,7 +20,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="slug" class="form-label">Slug</label>
+                <label for="slug" class="form-label">Slug (otomatis)</label>
                 <input type="text" class="form-control @error('slug')
                     is-invalid
                 @enderror" id="slug" name="slug" readonly required value="{{ old('slug') }}">

@@ -61,7 +61,7 @@ Route::get('/penulis', function(){
 //         'title' => "Post By Author: $author->username",
 //         'posts' => $author->posts->load('category', 'author') //N+1 sembuh dengan load('relasi', 'relasi')
 //     ]);
-// });
+ // });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
